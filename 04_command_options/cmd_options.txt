@@ -1,0 +1,9 @@
+SET name Yoshi EX 5
+
+SET name Yoshi NX
+
+SET name Yoshi XX
+
+SET name Peach GET
+
+SET name Rand GET
