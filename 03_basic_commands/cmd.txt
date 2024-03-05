@@ -1,0 +1,31 @@
+Basic command for Redis
+---------------------------
+
+SET name Mario
+SET name2 Chun li
+SET name2 'Chun Li'
+
+
+GET name
+SET deletable "John Doe"
+DEL deletable
+
+MSET name3 Yoshi color green rating 10
+
+GET rating
+
+MGET name rating name2 name3
+
+GETRANGE nam 0 3
+GETRANGE name 0 3
+GETRANGE name 0 2
+GETRANGE name3 0 2
+GETRANGE name3 -3 -1
+
+
+INCR rating
+DECR rating
+
+INCRBY rating 5
+
+DECRBY  rating 11
