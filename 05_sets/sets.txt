@@ -1,0 +1,18 @@
+// unordered collections of string that must be unique
+
+names --> {'Yoshi','Mario', 'Peach'}: OK
+
+SADD names Yoshi
+SADD names Mario Peach
+
+SREM names Peach // remove Peach
+
+colors -->{'Red','Blue','Green','Red'}: NO - repetition for member 'Red'
+
+
+
+SADD moresNames Bowser Link Zelda
+SUNION names moresNames
+
+SISMEMBER names Link // 0
+SISMEMBER names Mario // 1
