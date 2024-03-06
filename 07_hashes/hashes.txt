@@ -1,0 +1,29 @@
+// create a hash and add 1 key value
+HSET books:1 title "Name of the wind"
+HSET books:1 rating "9"
+HSET books:1 author "Patrick Rufus"
+
+// overwrite values (for rating f.exam)
+HSET books:1 rating 10
+
+// get a field from hash
+HGET books:1 author
+
+// get all fields from hash
+HGETALL books:2
+
+// check prop exists on a hash
+HEXISTS books:1 title // 1, yes
+HEXISTS books:1 sky // 0, No
+
+// get all keys
+HKEYS books:1 
+
+// get all values in a hash
+HVALS books:2
+
+// delete a field + value
+HDEL books:1 author
+
+// delete a hash
+DEL books:1
