@@ -1,0 +1,28 @@
+// left push to the list
+LPUSH orders Ryu
+LPUSH orders "Chin Li"
+
+// right push to the list
+RPUSH orders Blanka Ken
+
+LPUSH orders Sagat Blarog
+
+// left pop of the list, 1 item
+LPOP orders 1
+
+// right pop of the list, 2 items
+RPOP orders 2
+
+// length of the list
+LLEN orders
+
+// read a range of the list
+LRANGE orders 0 1
+LRANGE orders 0 2
+LRANGE orders -2 -1
+
+// read a single index or position in the list
+LINDEX orders 1
+
+// read a single item in the list
+LINDEX orders  Ryu
